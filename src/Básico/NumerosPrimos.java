@@ -10,7 +10,7 @@ public class NumerosPrimos {
         int inicio, fim, primo = 0;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Insira o número de início: ");
+        System.out.println("Insira o número inicial: ");
         inicio = scanner.nextInt();
         System.out.println("Insira o número final: ");
         fim = scanner.nextInt();
