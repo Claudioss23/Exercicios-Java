@@ -29,12 +29,12 @@ public class Retangulo {
         this.altura = altura;
     }
 
-    public String getCor() {
+    public static String getCor() {
         return cor;
     }
 
-    public void setCor(String cor) {
-        this.cor = cor;
+    public static void setCor(String cor) {
+        Retangulo.cor = cor;
     }
 
     public double getArea() {
