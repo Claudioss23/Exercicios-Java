@@ -1,4 +1,4 @@
-package Mediano.Carro;
+package Testes.Carro;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

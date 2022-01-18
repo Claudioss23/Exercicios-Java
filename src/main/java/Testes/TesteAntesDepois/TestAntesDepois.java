@@ -1,4 +1,4 @@
-package Mediano.TesteAntesDepois;
+package Testes.TesteAntesDepois;
 
 import org.junit.jupiter.api.*;
 

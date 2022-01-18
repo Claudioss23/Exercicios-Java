@@ -1,4 +1,4 @@
-package Mediano.Carro;
+package Testes.Carro;
 
 public class CarroMain {
     public static void main(String[] args) {
