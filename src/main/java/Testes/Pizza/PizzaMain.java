@@ -1,4 +1,4 @@
-package Mediano.Pizza;
+package Testes.Pizza;
 
 public class PizzaMain {
     public static void main(String[] args) {

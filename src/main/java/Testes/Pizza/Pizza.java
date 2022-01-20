@@ -1,4 +1,4 @@
-package Mediano.Pizza;
+package Testes.Pizza;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -35,7 +35,9 @@ public class Pizza {
     }
 
     public double getPreco() {
-        if(ingredientes.size() <= 2) {
+        if (ingredientes.size() == 0) {
+            System.out.println("Não é possível vender uma pizza sem ingredientes");
+        } else if(ingredientes.size() <= 2) {
             System.out.println("A pizza custa R$15,00");
             preco = 15;
         } else if(ingredientes.size() > 3 && ingredientes.size() <= 5) {
@@ -46,6 +48,11 @@ public class Pizza {
             preco = 23;
         }
         return preco;
+    }
+
+    public static void zeraIngredientes() {
+        mapIngredientes.clear();
+        qtdIngredientes = 0;
     }
 }
 

@@ -1,4 +1,4 @@
-package Mediano.Pizza;
+package Testes.Pizza;
 
 import java.util.ArrayList;
 
@@ -10,6 +10,8 @@ public class CarrinhoDeCompras {
     public void addPizza(Pizza pizza) {
         if (!pizza.getIngredientes().isEmpty()) {
             pizzas.add(pizza);
+        } else {
+            System.out.println("Não é possível adicionar uma pizza sem ingredientes!");
         }
     }
 
