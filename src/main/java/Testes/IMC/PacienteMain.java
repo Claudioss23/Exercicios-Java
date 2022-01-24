@@ -1,4 +1,4 @@
-package Mediano.IMC;
+package Testes.IMC;
 
 public class PacienteMain {
     public static void main(String[] args) {

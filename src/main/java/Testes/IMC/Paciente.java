@@ -1,4 +1,4 @@
-package Mediano.IMC;
+package Testes.IMC;
 
 public class Paciente {
 
@@ -16,7 +16,7 @@ public class Paciente {
     public void diagnostico() {
         imc = calcularIMC();
 
-        if (imc <= 16) {
+        if (imc < 16) {
             System.out.println("Baixo peso muito grave = IMC abaixo de 16 kg/m²");
         }
         if (imc >= 16 && imc <= 16.99) {
@@ -25,7 +25,7 @@ public class Paciente {
         if (imc >= 17 && imc <= 18.49) {
             System.out.println("Baixo peso = IMC entre 17 e 18,49 kg/m²");
         }
-        if (imc >= 18.5 && imc <= 29.99) {
+        if (imc >= 18.5 && imc <= 24.99) {
             System.out.println("Peso normal = IMC entre 18,50 e 24,99 kg/m²");
         }
         if (imc >= 25 && imc <= 29.99) {
