@@ -1,5 +1,7 @@
 package Mediano.PilhaEncapsulada;
 
+import java.util.Arrays;
+
 public class PilhaEncapsuladaMain {
     public static void main(String[] args) {
 
@@ -12,11 +14,19 @@ public class PilhaEncapsuladaMain {
         System.out.println(p.topo());
         System.out.println(p.tamanho());
 
+        Object[] arrayElementos = p.getElementos();
+        System.out.println(Arrays.toString(arrayElementos));
+        System.out.println(arrayElementos.length);
+
         System.out.println("------------");
 
-        System.out.println(p.desempilhar().toString().toUpperCase());
+        arrayElementos[2] = "OUTRO";
 
-        System.out.println(p.topo().toString().toUpperCase());
+        System.out.println(p.desempilhar());
+        System.out.println(p.topo());
         System.out.println(p.tamanho());
+
+        System.out.println(Arrays.toString(arrayElementos));
+        System.out.println(arrayElementos.length);
     }
 }
