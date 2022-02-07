@@ -8,7 +8,7 @@ public class Hardcore implements MecanicaDoJogo {
     private int pontos = 0;
     private final BancoDePalavras bDP = new BancoDePalavras();
     private String palavraVez = bDP.getPalavraAleatoria();
-    private int resta = bDP.getTamanho();
+    private final int resta = bDP.getTamanho();
 
     @Override
     public String getNomeEDescricao() {

@@ -9,12 +9,12 @@ public class Medio implements MecanicaDoJogo {
     private int pontos = 0;
     private final BancoDePalavras bDP = new BancoDePalavras();
     private String palavraVez = bDP.getPalavraAleatoria();
-    private int resta = bDP.getTamanho();
+    private final int resta = bDP.getTamanho();
 
     @Override
     public String getNomeEDescricao() {
         return "Dificuldade: Médio\n" +
-                "Descrição: Pode errar 2 vezes por palavra.";
+                "Descrição: Pode errar 2 vezes por palavra. Você perde pontos ao errar.";
     }
 
     @Override
@@ -57,8 +57,16 @@ public class Medio implements MecanicaDoJogo {
         if(pontos <= 0) {
             return "Pontuação Final: " + pontos +
                     "\nTu é horrível, boy!";
+        } else if(pontos <= 5) {
+            return "Pontuação Final: " + pontos + "\nAinda dá pra melhorar!";
+        } else if(pontos <= 10) {
+            return "Pontuação Final: " + pontos + "\nMuito bem!";
+        } else if(pontos <= 15) {
+            return "Pontuação Final: " + pontos + "\nÓtima performance!";
+        } else if(pontos <= 19) {
+            return "Pontuação Final: " + pontos + "\nIncrível!";
         } else {
-            return "Pontuação Final: " + pontos + "\nParabéns!";
+            return "Pontuação Final: " + pontos + "\nParabéns! Você conseguiu a pontuação máxima!\nTente uma dificuldade mais difícil.";
         }
     }
 }
