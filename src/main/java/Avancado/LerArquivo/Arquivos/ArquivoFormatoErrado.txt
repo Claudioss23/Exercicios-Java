@@ -1,0 +1,3 @@
+nome do jogo-Skyrim
+categoria-RPG
+horas jogadas-5
