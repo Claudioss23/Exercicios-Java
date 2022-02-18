@@ -1,6 +1,6 @@
 package Básico;
 
-public class ExcecoesMain {
+public class Excecoes {
     public static void main(String[] args){
         a(-100);
         System.out.println("Terminando execução de main()");
