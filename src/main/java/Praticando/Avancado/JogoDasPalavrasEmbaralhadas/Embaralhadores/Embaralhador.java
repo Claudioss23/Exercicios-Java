@@ -1,0 +1,8 @@
+package Praticando.Avancado.JogoDasPalavrasEmbaralhadas.Embaralhadores;
+
+public interface Embaralhador {
+
+    String embaralhar(String palavra);
+
+    String getNome();
+}
