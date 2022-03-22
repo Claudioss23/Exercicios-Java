@@ -3,13 +3,6 @@ package CodeWars.EightKyu.OddNumbers;
 public class OddNumbers {
 
     public static int oddCount(int n){
-        int oddNumbers = 0;
-
-        for(int i = 0; i < n; i++) {
-            if(i % 2 != 0){
-                oddNumbers++;
-            }
-        }
-        return oddNumbers;
+        return n / 2; //With integer division, given a number n, there are n/2 odd numbers below it.
     }
 }
