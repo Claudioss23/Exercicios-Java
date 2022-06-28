@@ -1,4 +1,4 @@
-package CodeWars.SixKyu.Tribonacci;
+package CodeWars.SixKyu.TribonacciSequence;
 
 import java.util.ArrayList;
 import java.util.List;

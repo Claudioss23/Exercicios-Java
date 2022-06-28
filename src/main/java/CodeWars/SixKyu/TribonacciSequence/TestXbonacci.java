@@ -1,4 +1,4 @@
-package CodeWars.SixKyu.Tribonacci;
+package CodeWars.SixKyu.TribonacciSequence;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
